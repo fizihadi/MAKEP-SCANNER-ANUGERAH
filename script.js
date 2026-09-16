@@ -23,7 +23,7 @@ function onScanSuccess(scannedCode) {
         }
 
         logDiv.style.color = "#00ff66"; // Green
-        logDiv.innerText = "Hadir: " + data.name + "\n" + " Kerusi: " + (data.opsyen || "-");
+        logDiv.innerText = "Hadir: " + data.name + "\n" + " Opsyen: " + (data.opsyen || "-");
         
         // Tunjuk Butang Done
         doneBtn.style.display = "block";
