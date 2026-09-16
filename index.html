@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Kehadiran-Qr</title>
+  
+  <!-- CSS-->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- HTML5 QR Code Scanner Library -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Pengimbas Kehadiran IPGKBA</h2>
+    <div id="reader"></div>
+    
+    <!-- Masukkan Data -->
+    <div id="log">Imbas disini</div>
+    
+    <!-- Button Confirmed -->
+    <button id="doneBtn" onclick="resetScanner()" style="display: none;">Selesai</button>
+  </div>
+
+  <!-- Audio -->
+  <audio id="successSound" src="successAudio.mp3" preload="auto"></audio>
+
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
